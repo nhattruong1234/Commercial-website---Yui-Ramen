@@ -1,0 +1,16 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container {
+    width: 1150px;
+    max-width: 100%;
+    display: flex;
+}
+.content {
+    margin-top: 6.05rem;
+    margin-left: 20rem;
+    flex: 1;
+    min-height: 1000px;
+}

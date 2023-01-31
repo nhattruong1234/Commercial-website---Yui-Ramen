@@ -1,0 +1,66 @@
+.contacts-page {
+    display: flex;
+    color: var(--text-color);
+    justify-content: space-between;
+    .contacts-form {
+        width: 40%;
+        margin-top: 3rem;
+        padding: 10px;
+        background-color: rgba(255, 255, 0, 0.5);
+        border-radius: 20px;
+        label {
+            font-size: 15px;
+            font-weight: 700;
+            padding-left: 2rem;
+        }
+        input {
+            border-radius: 10px;
+            border: 1.5px solid gray;
+            height: 3rem;
+            width: 90%;
+            padding-left: 10px;
+            margin-left: 2rem;
+            margin-top: 1rem;
+            margin-bottom: 1rem;
+        }
+        textarea {
+            width: 90%;
+            margin-left: 2rem;
+            margin-top: 1rem;
+            border-radius: 10px;
+            border: 1.5px solid gray;
+            padding: 10px;
+            height: 8rem;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        Button {
+            margin: 1rem 12.5rem;
+        }
+    }
+}
+h2 {
+    text-align: center;
+    padding-bottom: 2.5rem;
+    color: rgb(255, 115, 0);
+}
+
+.contacts-info {
+    width: 40%;
+    background-color: rgba(86, 255, 199, 0.5);
+    margin-top: 3rem;
+    padding: 10px;
+    border-radius: 20px;
+    .contacts-icon {
+        font-size: 3rem;
+        padding-left: 3rem;
+        color: rgb(56, 56, 56);
+    }
+    .contacts-fb,
+    .contacts-ytb,
+    .contacts-ins {
+        font-size: 2rem;
+        margin-left: 6rem;
+        margin-top: -4rem;
+        font-weight: 700;
+    }
+}

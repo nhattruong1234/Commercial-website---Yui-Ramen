@@ -1,6 +1,6 @@
 const routes = {
     home: '/',
     product: '/product',
-    booking: '/booking',
+    contacts: '/contacts',
 };
 export default routes;

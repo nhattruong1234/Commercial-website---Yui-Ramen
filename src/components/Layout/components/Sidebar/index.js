@@ -11,7 +11,7 @@ function Sidebar() {
             <Menu>
                 <MenuItem title="Trang chủ" to={routesConfig.home} />
                 <MenuItem title="Ẩm thực" to={routesConfig.product} />
-                <MenuItem title="Đặt bàn" to={routesConfig.booking} />
+                <MenuItem title="Liên hệ" to={routesConfig.contacts} />
             </Menu>
         </aside>
     );

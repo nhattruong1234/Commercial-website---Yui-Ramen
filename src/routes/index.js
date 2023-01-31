@@ -3,11 +3,11 @@ import routesConfig from '~/config/routes'
 
 import Home from '~/pages/Home';
 import Product from '~/pages/Product';
-import Booking from '~/pages/Booking';
+import Contacts from '~/pages/Contacts';
 
 export const publicRoutes = [
   { path: routesConfig.home, component: Home },
   { path: routesConfig.product, component: Product },
-  { path: routesConfig.booking, component: Booking /*layout: HeaderOnly*/ },
+  { path: routesConfig.contacts, component: Contacts /*layout: HeaderOnly*/ },
 ];
 export const privateRoutes = [];

@@ -9,9 +9,9 @@ function Sidebar() {
     return (
         <aside className={cx('wrapper')}>
             <Menu>
-                <MenuItem title="Trang chủ" to={routesConfig.home} icon={null} />
-                <MenuItem title="Ẩm thực" to={routesConfig.product} icon={null} />
-                <MenuItem title="Đặt bàn" to={routesConfig.booking} icon={null} />
+                <MenuItem title="Trang chủ" to={routesConfig.home} />
+                <MenuItem title="Ẩm thực" to={routesConfig.product} />
+                <MenuItem title="Đặt bàn" to={routesConfig.booking} />
             </Menu>
         </aside>
     );

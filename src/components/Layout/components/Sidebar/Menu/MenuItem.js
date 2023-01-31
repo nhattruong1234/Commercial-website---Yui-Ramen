@@ -5,13 +5,13 @@ import classNames from 'classnames/bind';
 
 const cx = classNames.bind(styles);
 
-function MenuItem({ title, to, icon }) {
+function MenuItem({ title, to }) {
     return (
         <NavLink
             className={(nav) => cx('menu-item', { active: nav.isActive })}
             to={to}
         >
-            {icon}
+
             <span className={cx('title')}>{title}</span>
         </NavLink>
     );
@@ -20,6 +20,5 @@ function MenuItem({ title, to, icon }) {
 MenuItem.propTypes = {
     title: PropTypes.string.isRequired,
     to: PropTypes.string.isRequired,
-    icon: PropTypes.node.isRequired,
 };
 export default MenuItem;

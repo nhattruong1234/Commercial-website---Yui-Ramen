@@ -1,14 +1,15 @@
-import images from '~/assets/images';
 import classNames from 'classnames/bind';
-import styles from './Home.module.scss';
+import styles from './ProductChild.module.scss';
+import React from 'react';
+
 const cx = classNames.bind(styles);
 
-function ProductChild({ products }) {
+function ProductChild(products) {
     return (
         <div className={cx('product-wrapper')}>
-            {products.map((title) => (
-                <div key={title}>{title}</div>
-            ))}
+            <img src={products.image} alt={products.title} />
+            <h4 className={cx('product-name')}>{products.title}</h4>
+            <p className={cx('product-price')}>{products.price}</p>
         </div>
     );
 }

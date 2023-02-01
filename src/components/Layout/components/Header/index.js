@@ -1,4 +1,3 @@
-import { useState } from 'react';
 import classNames from 'classnames/bind';
 import Tippy from '@tippyjs/react/headless';
 import 'tippy.js/dist/tippy.css';
@@ -49,8 +48,6 @@ const MENU_ITEMS = [
 ];
 
 function Header() {
-    const [searchResult, setSearchResult] = useState([]);
-
     return (
         <header className={cx('wrapper')}>
             <div className={cx('inner')}>
@@ -60,7 +57,6 @@ function Header() {
                     </Link>
                 </div>
                 <Tippy
-                    visible={searchResult.length > 0}
                     interactive
                     render={(attrs) => (
                         <div
@@ -76,13 +72,6 @@ function Header() {
                 >
                     <div className={cx('search')}>
                         <input placeholder="Tìm kiếm" spellCheck={false} />
-                        {/* <button className={cx('clear')}>
-                            <FontAwesomeIcon icon={faCircleXmark} />
-                        </button>
-                        <FontAwesomeIcon
-                            className={cx('loadingsearch')}
-                            icon={faSpinner}
-                        /> */}
                         <button className={cx('search-btn')}>
                             <FontAwesomeIcon icon={faMagnifyingGlass} />
                         </button>

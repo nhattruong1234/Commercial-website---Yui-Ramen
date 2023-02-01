@@ -75,7 +75,7 @@ function Header() {
                     )}
                 >
                     <div className={cx('search')}>
-                        <input placeholder="Search" spellCheck={false} />
+                        <input placeholder="Tìm kiếm" spellCheck={false} />
                         {/* <button className={cx('clear')}>
                             <FontAwesomeIcon icon={faCircleXmark} />
                         </button>
